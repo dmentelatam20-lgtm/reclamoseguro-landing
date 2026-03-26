@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Despacho de abogados especializado en Reclamaciones de Seguros. Recupera tu dinero sin adelantar honorarios.">
+    <meta name="robots" content="index, follow">
+    <title>ReclamoSeguro | Abogados Especialistas en Seguros</title>
+    
+    <!-- Optimizaciones de velocidad -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon (puedes cambiarlo después) -->
+    <link rel="icon" href="https://via.placeholder.com/32x32/ d4af77/111?text=⚖️" type="image/x-icon">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">ReclamoSeguro</a>
+            <ul class="nav-links">
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contactar</a></li>
+            </ul>
+            <button onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})" class="btn-contacto">Consulta Gratis</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Recupera <span class="highlight">lo que tu seguro te debe</span></h1>
+            <p class="hero-subtitle">Abogados especialistas en reclamaciones de seguros. Sin costo inicial. Resultados en meses, no en años.</p>
+            <button onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})" class="btn-hero">Quiero mi reclamación gratis</button>
+        </div>
+    </header>
+
+    <!-- BENEFICIOS -->
+    <section class="beneficios" id="beneficios">
+        <h2 class="section-title">¿Por qué elegir ReclamoSeguro?</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="icon">💰</div>
+                <h3>Sin adelanto de honorarios</h3>
+                <p>Solo cobramos si tú cobras. Cero riesgo para ti.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📈</div>
+                <h3>Recuperamos hasta el 100%</h3>
+                <p>Maximizamos tu indemnización con años de experiencia en seguros.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>100% online</h3>
+                <p>Desde tu celular. Sin venir a la oficina.</p>
+            </div>
+            <div class="card">
+                <div class="icon">⚖️</div>
+                <h3>8+ años de experiencia</h3>
+                <p>Especialistas exclusivos en reclamaciones contra compañías de seguros.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios" id="testimonios">
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        <div class="cards-grid">
+            <div class="testimonial-card">
+                <p>“Recuperé $1.200.000 de mi seguro de auto en solo 4 meses. ¡Increíble!”</p>
+                <div class="client-info">
+                    <div class="stars">★★★★★</div>
+                    <p><strong>María González</strong> — Montevideo</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>“Me negaron el seguro de vida y ellos lo lograron. Muy profesionales.”</p>
+                <div class="client-info">
+                    <div class="stars">★★★★★</div>
+                    <p><strong>Carlos Ramírez</strong> — Punta del Este</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>“Atención rápida y transparente. Recomendado al 100%.”</p>
+                <div class="client-info">
+                    <div class="stars">★★★★★</div>
+                    <p><strong>Laura Méndez</strong> — Canelones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="contacto" id="contacto">
+        <h2 class="section-title">Cuéntanos tu caso</h2>
+        <form action="https://formspree.io/f/mkopgoqb" method="POST" class="contact-form">
+            <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <input type="tel" name="telefono" placeholder="Tu teléfono (con WhatsApp)" required>
+            <textarea name="motivo" rows="5" placeholder="Describe brevemente tu caso (compañía de seguros, qué te negaron, etc.)" required></textarea>
+            <button type="submit" class="btn-enviar">Enviar mi consulta ahora</button>
+        </form>
+        <p class="form-note">Te responderemos en menos de 24 horas • Consulta completamente gratuita y sin compromiso</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 ReclamoSeguro • Despacho de Abogados Especializados en Reclamaciones de Seguros</p>
+            <p>Montevideo, Uruguay • Tel: <a href="tel:+59812345678">+598 12 345 678</a></p>
+            <p>Consulta 100% confidencial</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
