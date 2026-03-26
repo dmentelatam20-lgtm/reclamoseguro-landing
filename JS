@@ -1,0 +1,274 @@
+/* =============================================
+   1. RESET Y CONFIGURACIÓN GENERAL
+   ============================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0a0a0a;
+    color: #e5e5e5;
+    line-height: 1.6;
+}
+
+/* =============================================
+   2. PALETA DE COLORES
+   ============================================= */
+:root {
+    --negro: #0a0a0a;
+    --gris-oscuro: #1a1a1a;
+    --dorado: #d4af77;
+    --azul-electrico: #00d4ff;
+    --blanco: #e5e5e5;
+}
+
+/* =============================================
+   3. NAVEGACIÓN
+   ============================================= */
+.navbar {
+    background-color: var(--gris-oscuro);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dorado);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--azul-electrico);
+}
+
+.btn-contacto {
+    background-color: var(--dorado);
+    color: #111;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: var(--azul-electrico);
+    transform: translateY(-2px);
+}
+
+/* =============================================
+   4. HERO
+   ============================================= */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: var(--dorado);
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+.btn-hero {
+    background-color: var(--azul-electrico);
+    color: #111;
+    font-size: 1.3rem;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: var(--dorado);
+    transform: scale(1.05);
+}
+
+/* =============================================
+   5. SECCIONES GENERALES
+   ============================================= */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--dorado);
+    margin: 15px auto 0;
+}
+
+/* =============================================
+   6. BENEFICIOS Y TESTIMONIOS
+   ============================================= */
+.cards-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 5%;
+}
+
+.card, .testimonial-card {
+    background-color: var(--gris-oscuro);
+    padding: 2rem;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card:hover, .testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px rgba(212, 175, 119, 0.15);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: var(--dorado);
+    margin-bottom: 0.8rem;
+}
+
+/* =============================================
+   7. FORMULARIO
+   ============================================= */
+.contacto {
+    background-color: var(--gris-oscuro);
+    padding: 5rem 5%;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 16px 20px;
+    background-color: #0a0a0a;
+    border: 2px solid #333;
+    border-radius: 12px;
+    color: #e5e5e5;
+    font-size: 1.1rem;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--azul-electrico);
+    outline: none;
+}
+
+.btn-enviar {
+    background-color: var(--dorado);
+    color: #111;
+    padding: 18px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: var(--azul-electrico);
+}
+
+.form-note {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+/* =============================================
+   8. FOOTER
+   ============================================= */
+footer {
+    background-color: #111;
+    padding: 3rem 5%;
+    text-align: center;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+/* =============================================
+   9. RESPONSIVE - MOBILE FIRST
+   ============================================= */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+    .nav-links {
+        display: none; /* puedes agregar hamburguesa después si quieres */
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
